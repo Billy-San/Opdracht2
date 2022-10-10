@@ -34,7 +34,7 @@
             this.JapanseYen = new System.Windows.Forms.Label();
             this.IndiaanseRupees = new System.Windows.Forms.Label();
             this.ZwitserseFranken = new System.Windows.Forms.Label();
-            this.tb_USB = new System.Windows.Forms.TextBox();
+            this.tb_USD = new System.Windows.Forms.TextBox();
             this.tb_BP = new System.Windows.Forms.TextBox();
             this.tb_EURO = new System.Windows.Forms.TextBox();
             this.tb_JY = new System.Windows.Forms.TextBox();
@@ -97,12 +97,12 @@
             this.ZwitserseFranken.TabIndex = 5;
             this.ZwitserseFranken.Text = "Zwitserse Franken";
             // 
-            // tb_USB
+            // tb_USD
             // 
-            this.tb_USB.Location = new System.Drawing.Point(240, 22);
-            this.tb_USB.Name = "tb_USB";
-            this.tb_USB.Size = new System.Drawing.Size(150, 31);
-            this.tb_USB.TabIndex = 6;
+            this.tb_USD.Location = new System.Drawing.Point(240, 22);
+            this.tb_USD.Name = "tb_USD";
+            this.tb_USD.Size = new System.Drawing.Size(150, 31);
+            this.tb_USD.TabIndex = 6;
             // 
             // tb_BP
             // 
@@ -147,6 +147,7 @@
             this.Convertor.TabIndex = 12;
             this.Convertor.Text = "Convert";
             this.Convertor.UseVisualStyleBackColor = true;
+            this.Convertor.Click += new System.EventHandler(this.Convertor_Click);
             // 
             // Form1
             // 
@@ -159,7 +160,7 @@
             this.Controls.Add(this.tb_JY);
             this.Controls.Add(this.tb_EURO);
             this.Controls.Add(this.tb_BP);
-            this.Controls.Add(this.tb_USB);
+            this.Controls.Add(this.tb_USD);
             this.Controls.Add(this.ZwitserseFranken);
             this.Controls.Add(this.IndiaanseRupees);
             this.Controls.Add(this.JapanseYen);
@@ -181,7 +182,7 @@
         private Label JapanseYen;
         private Label IndiaanseRupees;
         private Label ZwitserseFranken;
-        private TextBox tb_USB;
+        private TextBox tb_USD;
         private TextBox tb_BP;
         private TextBox tb_EURO;
         private TextBox tb_JY;
